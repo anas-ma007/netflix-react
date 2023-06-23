@@ -8,7 +8,7 @@ function Banner() {
     const [movie, setMovie] = useState()
     useEffect(()=>{
         axios.get(`https://api.themoviedb.org/3/trending/all/week?api_key=${API_KEY}&language=en-US`).then((response)=>{
-            console.log(response.data.results[0]);
+            console.log(response.data.results[0], "banner console");
             setMovie(response.data.results[0])
         })
     }, [])
