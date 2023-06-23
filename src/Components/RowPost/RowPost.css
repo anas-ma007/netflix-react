@@ -1,7 +1,6 @@
 .row{
     margin-left: 20px;
     color: white;
-
 } 
 .posters{
     display: flex;
@@ -15,5 +14,11 @@
 }
 .poster{
     max-height: 250px;
-    margin-right:10px;
+    margin-right:13px;
+}
+.smallPoster{
+    max-height: 150px;
+    margin-right:13px;
+
+
 }
