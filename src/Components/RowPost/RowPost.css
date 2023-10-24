@@ -1,34 +1,59 @@
-.row{
-    margin-left: 20px;
-    color: white;
-} 
-.posters{
-    display: flex;
-    padding: 20px;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    cursor: pointer;
-
+.row {
+  margin-left: 20px;
+  color: white;
+}
+.posters {
+  display: flex;
+  padding: 20px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  cursor: pointer;
 }
 
-.posters::-webkit-scrollbar{
-    display: none;
+.posters::-webkit-scrollbar {
+  display: none;
+}   
+.poster {
+  max-height: 250px;
+  margin-right: 13px;
 }
-.poster{
-    max-height: 250px;
-    margin-right:13px;
+.smallPoster {
+  max-height: 150px;
+  margin-right: 13px;
 }
-.smallPoster{
-    max-height: 150px;
-    margin-right:13px;
+.poster:hover {
+  transform: scale(1.03);
+}
+.smallPoster:hover {
+  transform: scale(1.03);
+}
 
 
-}
-.poster:hover{
-    transform: scale(1.03);
 
-}
-.smallPoster:hover{
-    transform: scale(1.03);
+/* Responsive styles */
+@media (max-width: 768px) {
+  .posters {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
 
+  .poster,
+  .smallPoster {
+    max-height: 200px; /* Adjust the maximum height for smaller screens */
+    margin-right: 10px; /* Adjust the margin for smaller screens */
+  }
+
+  .smallPoster {
+    max-height: 120px; /* Adjust the maximum height for smaller screens */
+  }
+
+  .poster:hover,
+  .smallPoster:hover {
+    transform: scale(1.03); /* Keep the same scaling effect for smaller screens */
+  }
 }
+/* In this code, I've added a media query for screens with a maximum width of 768px. You can adjust the padding, maximum height, margin, and any other styles to make the posters and their containers responsive for smaller screens. The scaling effect on hover remains the same for both poster sizes. */
+
+
+
+
+

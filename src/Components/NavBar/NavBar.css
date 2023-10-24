@@ -21,3 +21,21 @@
     width: 30px;
     
 }
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar {
+      height: 60px;
+      padding: 10px;
+    }
+  
+    .logo {
+      width: 60px;
+    }
+  
+    .avatar {
+      width: 20px;
+    }
+  }
+  
